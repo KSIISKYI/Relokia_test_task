@@ -24,10 +24,10 @@ class Ticket
     public function __construct(array $ticketData)
     {
         $creditals = [
-            'https://mycompany5098.zendesk.com', 
-            'oleksiyyy882@gmail.com', 
-            '', 
-            'EbtKraCZ4tTXKylak2sgxrnSaWU031fJQkJublO1'
+            $_ENV['URL'], 
+            $_ENV['EMAIL'],
+            $_ENV['PASSWORD'], 
+            $_ENV['TOKEN']
         ];
 
         $groupLoader = new GroupDataLoader(...$creditals);
