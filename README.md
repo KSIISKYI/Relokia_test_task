@@ -29,7 +29,11 @@ mv .env.example .env
 ```
 docker-compose up -d
 ```
-7. Run the script
+7. Composer install 
+```
+docker-compose exec -it php composer install
+```
+8. Run the script
 ```
 http://localhost/index.php
 ```
